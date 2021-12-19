@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h1 class="logo">DojoWeather</h1>
+            <div class="cities">
+                <a href="#" onclick="loadMsg()">Burbank</a>
+                <a href="#" onclick="loadMsg()">Chicago</a>
+                <a href="#" onclick="loadMsg()">Dallas</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="header">
+                <h1>San Jose</h1>
+                <div class="temp">
+                    <p>show temperature in </p>
+                    <div class="temp-type">
+                        <select name="degrees" id="degree-type" onchange="tempChange()">
+                            <option value="placeholder">Choose One</option>
+                            <option value="Celcius" id="celcius">Celcius</option>
+                            <option value="Fahrenheit" id="fahrenheit">Fahrenheit</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="days">
+                <div class="today">
+                    <p class="day-name">Today</p>
+                    <img src="/images/some_rain.png" alt="rain icon" class="icon">
+                    <p class="temp-discription">some rain</p>
+                    <div class="temp-number">
+                        <p class="red" id="today-high">24°</p>
+                        <p class="blue" id="today-low">18°</p>
+                    </div>
+                </div>
+                <div class="today">
+                    <p class="day-name">Tomorrow</p>
+                    <img src="/images/some_sun.png" alt="sun icon" class="icon">
+                    <p class="temp-discription">some sun</p>
+                    <div class="temp-number">
+                        <p class="red" id="tomorrow-high">27°</p>
+                        <p class="blue" id="tomorrow-low">19°</p>
+                    </div>
+                </div>
+                <div class="today">
+                    <p class="day-name">Friday</p>
+                    <img src="/images/some_clouds.png" alt="cloud icon" class="icon">
+                    <p class="temp-discription">some clouds</p>
+                    <div class="temp-number">
+                        <p class="red" id="friday-high">21°</p>
+                        <p class="blue" id="friday-low">16°</p>
+                    </div>
+                </div>
+                <div class="today">
+                    <p class="day-name">Saturday</p>
+                    <img src="/images/some_sun.png" alt="rain icon" class="icon">
+                    <p class="temp-discription">some sun</p>
+                    <div class="temp-number">
+                        <p class="red" id="saturday-high">26°</p>
+                        <p class="blue" id="saturday-low">21°</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-alert" id="hide">
+                <img src="/images/cookie.png" alt="cookie icon" class="cookie">
+                <div class="body">
+                    <h3>Stop! Cookie Time</h3>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+                </div>
+                <button id="btn" onclick="hide('hide')">I Accept</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
